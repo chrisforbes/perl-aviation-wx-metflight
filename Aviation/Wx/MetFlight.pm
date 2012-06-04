@@ -64,7 +64,7 @@ responsibility for any consequences following use of this tool. There is
 no guarantee that fetched briefings are correct or complete.
 
 Note that MetFlight GA is designed and produced only for use by pilots,
-flying clubs and flight training organisations conductiing VFR or IFR
+flying clubs and flight training organisations conducting VFR or IFR
 recreational or training flights, at or below 10000ft in New Zealand.
 
 =cut
