@@ -1,0 +1,40 @@
+NAME
+    Aviation::Wx::MetFlight - Fetch Weather Briefings from MetFlight GA
+
+SYNOPSIS
+      my $brief = Aviation::Wx::MetFlight::fetch(
+            username => '...',
+            password => '...',
+            regions  => 'SA ST DV',
+            hours    => 6
+      );
+
+DESCRIPTION
+    Fetches weather briefings from MetFlight GA. The briefings can then be
+    decoded and used in planning tools, actual weather for simulators, etc.
+
+    Note: This module requires a valid logon to MetFlight GA, which is
+    available as a subscription service for holders of New Zealand Aviation
+    Documents.
+
+PARAMETERS
+    * username - *Required*.
+
+    * password - *Required*.
+
+    * regions - *Required*. Space-separated list of ARFOR region codes.
+    Valid regions: FN - Far North TA - Tamaki TK - Te Kuiti ED - Edgecumbe
+    CP - Central Plateau MH - Mahia SA - Sanson DV - Dannevirke ST - Straits
+    TN - Tasman WW - Windward KA - Kaikouras AL - Alps PL - Plains FD -
+    Fiordland CY - Clyde GE - Gore
+
+    * hours - Number of hours' METAR/SPECI reports to download. Default 1.
+
+    * ua - User agent string to use when fetching the pages. Default: FF12
+    on Linux
+
+LICENSE
+    This program is free software, made available to you under the terms of
+    the GNU General Public License, version 3 (or, at your option, any later
+    version)
+

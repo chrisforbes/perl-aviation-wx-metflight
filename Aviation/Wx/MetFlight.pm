@@ -34,9 +34,11 @@ as a subscription service for holders of New Zealand Aviation Documents.
 
 =head1 PARAMETERS
 
-username - *Required*.
-password - *Required*.
-regions - *Required*. Space-separated list of ARFOR region codes.
+* username - *Required*.
+
+* password - *Required*.
+
+* regions - *Required*. Space-separated list of ARFOR region codes.
 	Valid regions:
   	FN - Far North		TA - Tamaki		TK - Te Kuiti
   	ED - Edgecumbe 		CP - Central Plateau 	MH - Mahia
@@ -45,8 +47,15 @@ regions - *Required*. Space-separated list of ARFOR region codes.
   	AL - Alps		PL - Plains		FD - Fiordland
   	CY - Clyde		GE - Gore 
 
-hours - Number of hours' METAR/SPECI reports to download. Default 1.
-ua - User agent string to use when fetching the pages. Default: FF12 on Linux
+* hours - Number of hours' METAR/SPECI reports to download. Default 1.
+
+* ua - User agent string to use when fetching the pages. Default: FF12 on Linux
+
+=head1 LICENSE
+
+This program is free software, made available to you under the 
+terms of the GNU General Public License, version 3 (or, at your 
+option, any later version)
 
 =cut
 
