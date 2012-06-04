@@ -30,7 +30,7 @@ Fetches weather briefings from MetFlight GA. The briefings can then be
 decoded and used in planning tools, actual weather for simulators, etc.
 
 Note: This module requires a valid logon to MetFlight GA, which is available
-as a subscription service for holders of New Zealand Aviation Documents.
+as a subscription service for holders of New Zealand aviation documents.
 
 =head1 PARAMETERS
 
@@ -57,6 +57,16 @@ This program is free software, made available to you under the
 terms of the GNU General Public License, version 3 (or, at your 
 option, any later version)
 
+=head1 DISCLAIMER
+
+This tool is not endorsed by CAA or MetService. The author does not accept
+responsibility for any consequences following use of this tool. There is
+no guarantee that fetched briefings are correct or complete.
+
+Note that MetFlight GA is designed and produced only for use by pilots,
+flying clubs and flight training organisations conductiing VFR or IFR
+recreational or training flights, at or below 10000ft in New Zealand.
+
 =cut
 
 sub fetch {
@@ -64,9 +74,9 @@ sub fetch {
 
 	my $username = $args{username}	// croak 'username required';
 	my $password = $args{password}	// croak 'password required';
-	my $regions = $args{regions} 	// croak 'regions required';
-	my $hours = $args{hours}	// 1;
-	my $agent = $args{ua}		// 
+	my $regions  = $args{regions} 	// croak 'regions required';
+	my $hours    = $args{hours}	// 1;
+	my $agent    = $args{ua}	// 
 		'Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/12.0';
 
 	my $ua = WWW::Mechanize->new( agent => $agent );

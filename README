@@ -14,8 +14,8 @@ DESCRIPTION
     decoded and used in planning tools, actual weather for simulators, etc.
 
     Note: This module requires a valid logon to MetFlight GA, which is
-    available as a subscription service for holders of New Zealand Aviation
-    Documents.
+    available as a subscription service for holders of New Zealand aviation
+    documents.
 
 PARAMETERS
     * username - *Required*.
@@ -37,4 +37,13 @@ LICENSE
     This program is free software, made available to you under the terms of
     the GNU General Public License, version 3 (or, at your option, any later
     version)
+
+DISCLAIMER
+    This tool is not endorsed by CAA or MetService. The author does not
+    accept responsibility for any consequences following use of this tool.
+    There is no guarantee that fetched briefings are correct or complete.
+
+    Note that MetFlight GA is designed and produced only for use by pilots,
+    flying clubs and flight training organisations conductiing VFR or IFR
+    recreational or training flights, at or below 10000ft in New Zealand.
 
