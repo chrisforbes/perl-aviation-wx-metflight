@@ -29,8 +29,9 @@ Aviation::Wx::MetFlight - Fetch Weather Briefings from MetFlight GA
 Fetches weather briefings from MetFlight GA. The briefings can then be
 decoded and used in planning tools, actual weather for simulators, etc.
 
-Note: This module requires a valid logon to MetFlight GA, which is available
-as a subscription service for holders of New Zealand aviation documents.
+Note: This module requires a valid logon to MetFlight GA
+(http://metflight.metra.co.nz), which is available as a subscription 
+service for holders of New Zealand aviation documents.
 
 =head1 PARAMETERS
 
