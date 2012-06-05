@@ -2,7 +2,6 @@ package Aviation::Wx::MetFlight;
 
 use 5.014;
 
-use utf8;
 use autodie;
 
 use WWW::Mechanize;
